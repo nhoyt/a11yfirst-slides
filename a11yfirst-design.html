@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A11yFirst for CKEditor</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+    </style>
+    <link type="text/css" rel="stylesheet" href="a11yfirst-design.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle
+---
+# A11yFirst for CKEditor
+---
+## What is it and why should I be using it?
+---
+layout: false
+.left-column[
+## What is it?
+]
+.right-column[
+The A11yFirst for CKEditor .red[*] project consists of document editing
+enhancements that promote and encourage _the creation of accessible content
+as you edit_.
+
+* Reorganizes the editor toolbar
+
+* Adds new features via plugins
+
+  - Heading / Paragraph menu
+
+  - Character Style menu
+
+  - A11yLink dialog
+
+  - A11yImage dialog
+
+  - A11yFirst Help
+
+.footnote[.red[*] CKEditor is the WYSIWYG editor used in Drupal 8]
+]
+---
+.left-column[
+## Why should I be using it?
+]
+.right-column[
+A11yFirst promotes a new model of proactive editing for the creation of
+accessible content.
+* The old model of remediation is not as effective.
+
+  - Accessibility checkers typically provide a laundry list of problems,
+    in no particular order.
+
+  - Going through the list and “fixing” the problems typically does not provide
+    learning experiences that help people better understand accessibility.
+
+  - “After the fact” checking for accessibility problems can be forgotten
+    too easily.
+
+* Because “timing is everything!”
+
+  - For example, the best time to add alt. text for an image is when its
+    purpose is clear and you can more easily answer the question: “What
+    information does _this_ image provide in _this_ particular context?”
+]
+---
+.left-column[
+## What is it?
+### Toolbar Reorganized
+]
+.right-column[
+## Toolbar Reorganized
+
+The top row of the toolbar is used for block elements, the semantics of which
+are communicated to screen reader users:
+
+  - Headings
+
+  - Paragraphs
+
+  - Lists (ordered &amp; unordered)
+
+  - Images
+
+  - Tables
+
+The bottom row includes common action features such as:
+
+  - Undo / Redo
+
+  - Cut / Copy / Paste
+
+  - Apply Character Styling
+
+  - Insert Special Character
+
+  - Set Language
+]
+---
+.left-column[
+## What is it?
+### Toolbar Reorganized
+### Heading / Paragraph
+]
+.right-column[
+## Heading / Paragraph
+
+* Headings are promoted to the top of the menu
+
+* All heading menu items are styled the same to reinforce their use as structural elements
+
+* Heading menu item labels indicate purpose
+
+* Based on cursor position in the document, only headings that
+  are in sequence can be selected
+
+* Paragraph formats: Normal, Preformatted text, Address line
+
+Additional configuration options:
+
+* Allow only one ```h1``` (true or false)
+
+* No gaps allowed (```h1;h2;h4``` results in ```h1, h2, h3, h4```)
+]
+---
+.left-column[
+## What is it?
+### Toolbar Reorganized
+### Heading / Paragraph
+### Character Style
+]
+.right-column[
+## Character Style
+
+Replaces the CKEditor Styles menu
+
+* Eliminates block styles
+
+* Configurable as in CKEditor
+
+* Located in the bottom row of the toolbar (deemphasized)
+
+* Provides Help menu item
+]
+---
+.left-column[
+## What is it?
+### Toolbar Reorganized
+### Heading / Paragraph
+### Character Style
+### A11yLink
+]
+.right-column[
+## A11yLink
+
+* Does not allow empty Display Text
+
+* Does not default to using the URL as the Display Text
+
+* Warns when a URL is used as the Display Text
+
+* Detects the use of ‘click here,’ ‘more,’ et al.
+
+* Provides a Help button
+]
+---
+.left-column[
+## What is it?
+### Toolbar Reorganized
+### Heading / Paragraph
+### Character Style
+### A11yLink
+### A11yImage
+]
+.right-column[
+## A11yImage
+
+* Prompts for Alternative Text
+
+* Warns when Alt. Text is more than 100 char. in length
+
+* Detects Alt. Text words and phrases such as ‘image of,’ ‘photo of’ et al.
+
+* Detects use of file name or size in Alt. Text
+
+* For a decorative image, allows the user to indicate that Alt. Text
+  is not required
+
+* Asks the user whether a Long Description is needed, and if so, where
+  it will be located in the document
+
+* Provides a Help button for information on accessible text descriptions
+]
+---
+.left-column[
+## What is it?
+### Toolbar Reorganized
+### Heading / Paragraph
+### Character Style
+### A11yLink
+### A11yImage
+### A11yFirst Help
+]
+.right-column[
+## A11yFirst Help
+
+Toolbar menu button with help topics covering each of the A11yFirst plugins:
+
+* The relevant topic can be selected from an A11yFirst menu or dialog box
+
+* Each topic also includes links to external resources
+
+* Additional topics
+
+  - List buttons
+
+  - Getting Started
+
+  - About A11yFirst
+]
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+     var slideshow = remark.create();
+    </script>
+  </body>
+</html>
