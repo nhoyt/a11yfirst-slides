@@ -25,7 +25,7 @@ layout: false
 ## What is it?
 ]
 .right-column[
-The A11yFirst for CKEditor.red[*] project consists of document editing
+The A11yFirst for CKEditor.red[*] project is a set of document editing
 enhancements that promote and encourage _the creation of accessible content
 as you edit_.
 
@@ -39,30 +39,30 @@ layout: false
 .right-column[
 How does it differ from CKEditor?
 
+* Adds new features via five plugins
+
+  1. Heading / Paragraph
+
+  1. A11yImage
+
+  1. A11yLink
+
+  1. Character Style
+
+  1. A11yFirst Help
+
 * Reorganizes the editor toolbar
-
-* Adds new features via plugins
-
-  - Heading / Paragraph
-
-  - Character Style
-
-  - A11yLink
-
-  - A11yImage
-
-  - A11yFirst Help
 ]
 ---
 .left-column[
 ## Why should I be using it?
 ]
 .right-column[
-A11yFirst promotes a new model of _proactive.red[*] editing_ for the creation of
-accessible content.
+A11yFirst promotes a new model of _proactive.red[*] editing_ for the creation
+of accessible content.
 
-.footnote[.red[*] proactive: acting in anticipation of future problems or needs
-_(from Merriam Webster Online Dictionary)_]
+.footnote[.red[*] proactive: acting in anticipation of future problems<br/>
+&nbsp;&nbsp;&nbsp;or needs _(Merriam Webster Dictionary)_]
 ]
 ---
 .left-column[
@@ -71,7 +71,8 @@ _(from Merriam Webster Online Dictionary)_]
 .right-column[
 Why was a new model needed?
 
-* The old (reactive) model of remediation is ineffective.
+* If the larger goal is helping authors better understand how to make their
+  content accessible, the reactive model of remediation is not as effective.
 
   - Accessibility checkers typically provide a laundry list of problems
     that need to be fixed.
@@ -91,49 +92,6 @@ Why was a new model needed?
 ---
 .left-column[
 ## What is it?
-### Toolbar Reorganized
-]
-.right-column[
-## Toolbar Reorganized
-
-### Top row
-Used for block elements, to promote choices relating to document structure
-as opposed to visual styling:
-
-  - Heading / Paragraph
-
-  - List (ordered &amp; unordered)
-
-  - Image
-
-  - Table
-]
----
-.left-column[
-## What is it?
-### Toolbar Reorganized
-]
-.right-column[
-## Toolbar Reorganized
-
-### Bottom row
-
-Includes common action features such as:
-
-  - Undo / Redo
-
-  - Cut / Copy / Paste
-
-  - Apply Character Styling
-
-  - Insert Special Character
-
-  - Set Language
-]
----
-.left-column[
-## What is it?
-### Toolbar Reorganized
 ### Heading / Paragraph
 ]
 .right-column[
@@ -145,20 +103,19 @@ Includes common action features such as:
 
 * Menu items are styled the same to reinforce their use as structural elements
 
-* Menu item labels indicate purpose
+* Menu item labels indicate purpose (e.g. ‘H2 – Section title’)
 
 * Only headings that are in sequence are enabled
 
 ### Configuration options:
 
-* Allow only one ```h1``` (true or false)
+* Allow only one `h1` (true or false)
 
-* Gaps are ignored (```h1;h2;h4``` results in ```h1, h2, h3, h4```)
+* Gaps are ignored (`h1;h2;h4` results in `h1, h2, h3, h4`)
 ]
 ---
 .left-column[
 ## What is it?
-### Toolbar Reorganized
 ### Heading / Paragraph
 ]
 .right-column[
@@ -172,60 +129,39 @@ Includes common action features such as:
 
 * Address line
 
+* Normal (DIV)
+
 ### Menu
 
-* Provides a Help menu item
-]
----
-.left-column[
-## What is it?
-### Toolbar Reorganized
-### Heading / Paragraph
-### Character Style
-]
-.right-column[
-## Character Style
+* Menu button placed in first position of first row of toolbar
 
-Based on the CKEditor Styles menu:
-
-* Eliminates block styles
-
-* Located in the bottom row of the toolbar (for de-emphasis)
-
-* Configurable (same syntax as CKEditor Styles)
+* Checkmark indicates the current heading level or paragraph format
 
 * Provides a Help menu item
 ]
 ---
 .left-column[
-## What is it?
-### Toolbar Reorganized
-### Heading / Paragraph
-### Character Style
-### A11yLink
+## Why should I be using it?
 ]
 .right-column[
-## A11yLink
+## Heading / Paragraph
 
-Based on the CKEditor Link plugin, except that it...
+It is important to use headings to demarcate and label the structure of your
+document.
 
-* Does not allow empty Display Text
+* This allows screen reader users to quickly and easily navigate from one
+  section to another.
 
-* Does not default to using the URL as the Display Text
+Headings should be used sequentially.
 
-* Warns when a URL is used as the Display Text
-
-* Detects the use of ‘click here,’ ‘more’ et al.
-
-* Provides a Help button
+* For example, if a screen reader user is trying to understand the context of
+  a `Level 4` heading and/or its content, and there is no corresponding `Level
+  3` heading, that can be confusing.
 ]
 ---
 .left-column[
 ## What is it?
-### Toolbar Reorganized
 ### Heading / Paragraph
-### Character Style
-### A11yLink
 ### A11yImage
 ]
 .right-column[
@@ -249,12 +185,94 @@ Based on the CKEditor Link plugin, except that it...
 ]
 ---
 .left-column[
+## Why should I be using it?
+]
+.right-column[
+## A11yImage
+
+* People with visual impairments need text descriptions of informative images.
+
+* Each informative image must at least have alternative text.
+
+* Alternative text should be succinct and should not include redundant or
+  irrelevant information.
+
+* An image that is purely decorative should have an empty `alt` attribute
+  (thus there should be a way to indicate that an image is decorative).
+
+* A complex informative image should have a long description in the document,
+  adjacent to the image.
+]
+---
+.left-column[
 ## What is it?
-### Toolbar Reorganized
 ### Heading / Paragraph
-### Character Style
-### A11yLink
 ### A11yImage
+### A11yLink
+]
+.right-column[
+## A11yLink
+
+Based on the CKEditor Link plugin, except that it...
+
+* Does not allow empty Display Text
+
+* Does not default to using the URL as the Display Text
+
+* Warns when a URL is used as the Display Text
+
+* Detects the use of ‘click here,’ ‘more’ et al.
+
+* Provides a Help button
+]
+---
+.left-column[
+## Why should I be using it?
+]
+.right-column[
+## A11yLink
+
+* The display text for a link should describe the target of the link.
+
+* URLs are typically not very descriptive when used as display text.
+]
+---
+.left-column[
+## What is it?
+### Heading / Paragraph
+### A11yImage
+### A11yLink
+### Character Style
+]
+.right-column[
+## Character Style
+
+Based on the CKEditor Styles menu:
+
+* Eliminates block styles
+
+* Located in the bottom row of the toolbar (for de-emphasis)
+
+* Configurable (same syntax as CKEditor Styles)
+
+* Provides a Help menu item
+]
+---
+.left-column[
+## Why should I be using it?
+]
+.right-column[
+## Character Style
+
+* Visual styling alone should not be used in place of heading or list markup.
+]
+---
+.left-column[
+## What is it?
+### Heading / Paragraph
+### A11yImage
+### A11yLink
+### Character Style
 ### A11yFirst Help
 ]
 .right-column[
@@ -273,6 +291,58 @@ Additional topics:
 * Getting Started
 
 * About A11yFirst
+]
+---
+.left-column[
+## What is it?
+### Heading / Paragraph
+### A11yImage
+### A11yLink
+### Character Style
+### A11yFirst Help
+### Toolbar Reorganized
+]
+.right-column[
+## Toolbar Reorganized
+
+### Top row
+Used for block elements, to promote choices relating to document structure
+as opposed to visual styling:
+
+  - Heading / Paragraph
+
+  - List (ordered &amp; unordered)
+
+  - Image
+
+  - Table
+]
+---
+.left-column[
+## What is it?
+### Heading / Paragraph
+### A11yImage
+### A11yLink
+### Character Style
+### A11yFirst Help
+### Toolbar Reorganized
+]
+.right-column[
+## Toolbar Reorganized
+
+### Bottom row
+
+Includes common action features such as:
+
+  - Undo / Redo
+
+  - Cut / Copy / Paste
+
+  - Apply Character Styling
+
+  - Insert Special Character
+
+  - Set Language
 ]
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
