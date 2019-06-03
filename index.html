@@ -21,58 +21,46 @@ class: center, middle
 ## What is it and why should I be using it?
 ---
 layout: false
-.left-column[
-## What is it?
-]
-.right-column[
 ## A11yFirst for CKEditor
+
+### What is it?
 
 A set of document editing enhancements for CKEditor.red[*] that promote and
 encourage _the creation of accessible content as you edit_.
 
-.footnote[.red[*] CKEditor is the default WYSIWYG editor in Drupal 8]
-]
+.footnote[.red[*] CKEditor is the default WYSIWYG text editor in Drupal 8]
 ---
-layout: false
-.left-column[
-## What is it?
-]
-.right-column[
 ## A11yFirst for CKEditor
 
-How does it differ from CKEditor?
+### How does it differ from CKEditor?
 
-1. Reorganizes the editor toolbar
+* Reorganizes the editor toolbar
 
-2. Adds new features via plugins
+* Adds new features via plugins
 
-  * Heading / Paragraph
+  1. Heading / Paragraph
 
-  * Character Style
+  1. Character Style
 
-  * Link
+  1. Link
 
-  * Image
+  1. Image
 
-  * Help
-]
+  1. Help
 ---
-.left-column[
-## Why should I be using it?
-]
-.right-column[
+## A11yFirst for CKEditor
+
+### Why should I be using it?
+
 A11yFirst for CKEditor promotes a new model of _proactive.red[*] editing_ for
 the creation of accessible content.
 
-.footnote[.red[*] proactive: acting in anticipation of future problems<br/>
-&nbsp;&nbsp;&nbsp;or needs _(Merriam Webster Dictionary)_]
-]
+.footnote[.red[*] _proactive_ — acting in anticipation of future problems or needs
+<br>&nbsp;&nbsp;_(Merriam Webster)_]
 ---
-.left-column[
-## Why should I be using it?
-]
-.right-column[
-Why was a new model needed?
+## A11yFirst for CKEditor
+
+### Why was a new model needed?
 
 * If the goal is helping authors understand how to make their content
   accessible, the reactive model of fixing problems after they happen is not
@@ -92,13 +80,21 @@ Why was a new model needed?
   - For example, the best time to add alt. text for an image is when its
     purpose is clear and you can more easily answer the question: “What
     information does _this_ image provide in _this_ particular context?”
-]
 ---
-.left-column[
-## What is it?
-### Toolbar Reorganized
-]
-.right-column[
+## The details
+
+* ### Toolbar Reorganized
+
+* ### Heading / Paragraph
+
+* ### Character Style
+
+* ### Link
+
+* ### Image
+
+* ### Help
+---
 ## Toolbar Reorganized
 
 ### Top row
@@ -115,20 +111,14 @@ as opposed to visual styling:
   * A11yFirst Image
 
   * Table
-]
 ---
-.left-column[
-## What is it?
-### Toolbar Reorganized
-]
-.right-column[
 ## Toolbar Reorganized
 
 ### Bottom row
 
 <img src="toolbar.png" width="600">
 
-Includes common action features such as:
+Includes common actions or features such as:
 
   * Undo / Redo
 
@@ -141,14 +131,27 @@ Includes common action features such as:
   * Set Language
 
   * Insert Special Character
-]
 ---
-.left-column[
-## What is it?
-### Toolbar Reorganized
-### Heading / Paragraph
-]
-.right-column[
+## Toolbar Reorganized
+
+### What problem is it trying to solve?
+
+The user interface / toolbar of most WYSIWYG editors communicates to its users:
+
+* “What your document looks like is all that matters!” (WRONG!!!)
+
+We are trying to counter that with a toolbar design that communicates that
+features related to structure are not only about visual styling.
+
+When elements such as headings and lists are used, screen readers convey their
+semantics. For example:
+
+* "Heading level 3: [heading content]"
+* "List with 5 items; item number 1: [list item content]"
+
+Block elements come first; visual styling is an alternative when there is no
+better choice.
+---
 ## Heading / Paragraph
 
 ### Headings
@@ -164,14 +167,7 @@ Includes common action features such as:
 * Allow only one `h1` (true or false)
 
 * Gaps are ignored (`h1;h2;h4` results in `h1, h2, h3, h4`)
-]
 ---
-.left-column[
-## What is it?
-### Toolbar Reorganized
-### Heading / Paragraph
-]
-.right-column[
 ## Heading / Paragraph
 
 ### Paragraph formats
@@ -184,72 +180,53 @@ Includes common action features such as:
 
 * Normal (DIV)
 
-### Menu
+### Menu / Button
 
-* Menu button placed in first position of first row of toolbar
+* Located in the first position of the first row of the toolbar
 
 * Provides a Help menu item
-]
 ---
-.left-column[
-## Why should I be using it?
-]
-.right-column[
+exclude: false
 ## Heading / Paragraph
 
-1. It is important to use headings to demarcate and label the structure of your
-   document.
+### Why use it?
 
-   This allows screen reader users to quickly and easily navigate from one
-   section to another.
+* Headings are important — they make it easier for all readers to understand
+  the structure of your document.
 
-1. Headings should be used sequentially.
+* Headings allow screen reader users to quickly and easily navigate from one
+  section of your document to another.
 
-   For example, understanding the context of a ‘Level 3’ heading, when there is no
-   corresponding ‘Level 2’ heading, can be very confusing.
-]
+* Using headings sequentially avoids unnecessary confusion.
+
+   For example, understanding the context of a ‘Level 3’ heading, when there
+   is no corresponding ‘Level 2’ heading preceding it, can be very confusing.
 ---
-.left-column[
-## What is it?
-### Toolbar Reorganized
-### Heading / Paragraph
-### Character Style
-]
-.right-column[
 ## Character Style
 
-Based on the CKEditor Styles menu:
+Based on the CKEditor Styles plugin:
 
 * Eliminates block styles
 
+* Configured with same syntax as Styles
+
+### Menu / Button
+
 * Located in the bottom row of the toolbar (for de-emphasis)
 
-* Configurable (same syntax as CKEditor Styles)
-
 * Provides a Help menu item
-]
 ---
-.left-column[
-## Why should I be using it?
-]
-.right-column[
 ## Character Style
 
-Visual styling alone should not be used in place of structural elements such
-as heading or list markup.
-]
+### Why use it?
+
+When visual styling is used in place of structural elements such as heading or
+list markup, important semantic information that helps screen reader users
+understand your content is missing from your document.
 ---
-.left-column[
-## What is it?
-### Toolbar Reorganized
-### Heading / Paragraph
-### Character Style
-### Link
-]
-.right-column[
 ## A11yFirst Link
 
-Based on the CKEditor Link plugin, except that it...
+Based on the CKEditor Link plugin:
 
 * Does not default to using the URL as the Display Text
 
@@ -260,30 +237,21 @@ Based on the CKEditor Link plugin, except that it...
 * Detects the use of nondescriptive words and phrases such as ‘click here,’
   ‘more’ et al.
 
+### Dialog box
+
 * Provides a Help button
-]
 ---
-.left-column[
-## Why should I be using it?
-]
-.right-column[
 ## A11yFirst Link
 
-1. The display text for a link should describe the target of the link.
+### Why use it?
 
-1. URLs are typically not very descriptive when used as display text.
-]
+* Display text should describe the target of the link.
+
+* URLs are typically not very descriptive when used as display text.
 ---
-.left-column[
-## What is it?
-### Toolbar Reorganized
-### Heading / Paragraph
-### Character Style
-### Link
-### Image
-]
-.right-column[
 ## A11yFirst Image
+
+Based on the CKEditor Image2 plugin:
 
 * Prompts for Alternative Text
 
@@ -299,46 +267,36 @@ Based on the CKEditor Link plugin, except that it...
 * Asks the user whether a Long Description is needed, and if so, where
   it will be located in the document
 
+### Dialog box
+
 * Provides a Help button
-]
 ---
-.left-column[
-## Why should I be using it?
-]
-.right-column[
 ## A11yFirst Image
 
-1. People with visual impairments need text descriptions of informative images.
+### Why use it?
 
-1. Each informative image must at least have alternative text.
+* People with visual impairments need text descriptions of informative images.
 
-1. Alternative text should be succinct and should not include redundant or
-   irrelevant information.
+* An informative image must at least have alternative text so that a screen
+  reader can briefly describe the information it conveys.
 
-1. An image that is purely decorative should have an empty `alt` attribute
-   (thus there should be a way to indicate that an image is decorative).
+* Alternative text should be succinct and should not include redundant or
+  irrelevant information.
 
-1. A complex informative image should have a long description in the document,
-   adjacent to the image.
-]
+* A complex informative image should have a long description in the document,
+  adjacent to the image.
+
+* An image that is purely decorative should have an empty `alt` attribute,
+  which tells the screen reader to ignore it. Thus there should be a way to
+  indicate that an image is decorative.
 ---
-.left-column[
-## What is it?
-### Toolbar Reorganized
-### Heading / Paragraph
-### Character Style
-### Link
-### Image
-### Help
-]
-.right-column[
 ## A11yFirst Help
 
-Help content is provided for each A11yFirst plugin:
+Help content is provided for each A11yFirst plugin.
 
-* Can be accessed from A11yFirst plugin menu or dialog box
+* Each topic can be accessed from the corresponding A11yFirst plugin
 
-* Topics may include links to external resources
+* Some topics include links to external accessibility resources
 
 Additional topics:
 
@@ -347,7 +305,6 @@ Additional topics:
 * Getting Started
 
 * About A11yFirst
-]
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script>
