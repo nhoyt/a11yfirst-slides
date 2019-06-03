@@ -18,21 +18,21 @@ class: center, middle
 ---
 # A11yFirst for CKEditor
 ---
-## What is it and why should I be using it?
+# What is it and why should I be using it?
 ---
 layout: false
-## A11yFirst for CKEditor
+# A11yFirst for CKEditor
 
-### What is it?
+## What is it?
 
 A set of document editing enhancements for CKEditor.red[*] that promote and
 encourage _the creation of accessible content as you edit_.
 
 .footnote[.red[*] CKEditor is the default WYSIWYG text editor in Drupal 8]
 ---
-## A11yFirst for CKEditor
+# A11yFirst for CKEditor
 
-### How does it differ from CKEditor?
+## How does it differ from CKEditor?
 
 * Reorganizes the editor toolbar
 
@@ -48,9 +48,9 @@ encourage _the creation of accessible content as you edit_.
 
   1. Help
 ---
-## A11yFirst for CKEditor
+# A11yFirst for CKEditor
 
-### Why should I be using it?
+## Why should I be using it?
 
 A11yFirst for CKEditor promotes a new model of _proactive.red[*] editing_ for
 the creation of accessible content.
@@ -58,9 +58,9 @@ the creation of accessible content.
 .footnote[.red[*] _proactive_ — acting in anticipation of future problems or needs
 <br>&nbsp;&nbsp;_(Merriam Webster)_]
 ---
-## A11yFirst for CKEditor
+# A11yFirst for CKEditor
 
-### Why was a new model needed?
+## Why was a new model needed?
 
 * If the goal is helping authors understand how to make their content
   accessible, the reactive model of fixing problems after they happen is not
@@ -81,23 +81,23 @@ the creation of accessible content.
     purpose is clear and you can more easily answer the question: “What
     information does _this_ image provide in _this_ particular context?”
 ---
-## The details
+# The details
 
-* ### Toolbar Reorganized
+* ## Toolbar Reorganized
 
-* ### Heading / Paragraph
+* ## Heading / Paragraph
 
-* ### Character Style
+* ## Character Style
 
-* ### Link
+* ## Link
 
-* ### Image
+* ## Image
 
-* ### Help
+* ## Help
 ---
-## Toolbar Reorganized
+# Toolbar Reorganized
 
-### Top row
+## Top row
 
 <img src="toolbar.png" width="600">
 
@@ -112,9 +112,9 @@ as opposed to visual styling:
 
   * Table
 ---
-## Toolbar Reorganized
+# Toolbar Reorganized
 
-### Bottom row
+## Bottom row
 
 <img src="toolbar.png" width="600">
 
@@ -132,9 +132,9 @@ Includes common actions or features such as:
 
   * Insert Special Character
 ---
-## Toolbar Reorganized
+# Toolbar Reorganized
 
-### What problem is it trying to solve?
+## What problem is it trying to solve?
 
 The user interface / toolbar of most WYSIWYG editors communicates to its users:
 
@@ -152,9 +152,9 @@ semantics. For example:
 Block elements come first; visual styling is an alternative when there is no
 better choice.
 ---
-## Heading / Paragraph
+# Heading / Paragraph
 
-### Headings
+## Headings
 
 * Only headings that are in sequence are enabled
 
@@ -162,15 +162,15 @@ better choice.
 
 * Menu item labels indicate purpose
 
-### Configuration options:
+## Configuration options:
 
 * Allow only one `h1` (true or false)
 
 * Gaps are ignored (`h1;h2;h4` results in `h1, h2, h3, h4`)
 ---
-## Heading / Paragraph
+# Heading / Paragraph
 
-### Paragraph formats
+## Paragraph formats
 
 * Normal
 
@@ -180,16 +180,15 @@ better choice.
 
 * Normal (DIV)
 
-### Menu / Button
+## Menu / Button
 
 * Located in the first position of the first row of the toolbar
 
 * Provides a Help menu item
 ---
-exclude: false
-## Heading / Paragraph
+# Heading / Paragraph
 
-### Why use it?
+## Why use it?
 
 * Headings are important — they make it easier for all readers to understand
   the structure of your document.
@@ -202,7 +201,7 @@ exclude: false
    For example, understanding the context of a ‘Level 3’ heading, when there
    is no corresponding ‘Level 2’ heading preceding it, can be very confusing.
 ---
-## Character Style
+# Character Style
 
 Based on the CKEditor Styles plugin:
 
@@ -210,21 +209,21 @@ Based on the CKEditor Styles plugin:
 
 * Configured with same syntax as Styles
 
-### Menu / Button
+## Menu / Button
 
 * Located in the bottom row of the toolbar (for de-emphasis)
 
 * Provides a Help menu item
 ---
-## Character Style
+# Character Style
 
-### Why use it?
+## Why use it?
 
 When visual styling is used in place of structural elements such as heading or
 list markup, important semantic information that helps screen reader users
 understand your content is missing from your document.
 ---
-## A11yFirst Link
+# A11yFirst Link
 
 Based on the CKEditor Link plugin:
 
@@ -237,19 +236,19 @@ Based on the CKEditor Link plugin:
 * Detects the use of nondescriptive words and phrases such as ‘click here,’
   ‘more’ et al.
 
-### Dialog box
+## Dialog box
 
 * Provides a Help button
 ---
-## A11yFirst Link
+# A11yFirst Link
 
-### Why use it?
+## Why use it?
 
 * Display text should describe the target of the link.
 
 * URLs are typically not very descriptive when used as display text.
 ---
-## A11yFirst Image
+# A11yFirst Image
 
 Based on the CKEditor Image2 plugin:
 
@@ -267,13 +266,13 @@ Based on the CKEditor Image2 plugin:
 * Asks the user whether a Long Description is needed, and if so, where
   it will be located in the document
 
-### Dialog box
+## Dialog box
 
 * Provides a Help button
 ---
-## A11yFirst Image
+# A11yFirst Image
 
-### Why use it?
+## Why use it?
 
 * People with visual impairments need text descriptions of informative images.
 
@@ -290,7 +289,7 @@ Based on the CKEditor Image2 plugin:
   which tells the screen reader to ignore it. Thus there should be a way to
   indicate that an image is decorative.
 ---
-## A11yFirst Help
+# A11yFirst Help
 
 Help content is provided for each A11yFirst plugin.
 

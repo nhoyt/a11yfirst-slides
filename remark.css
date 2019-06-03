@@ -13,12 +13,16 @@ h1, h2, h3 {
   margin-bottom: 0;
 }
 
+h2 {
+  margin-top: 0.5em;
+}
+
 h3 {
   margin-top: 0.75em;
 }
 
-.remark-slide-content h1 { font-size: 3em; }
-.remark-slide-content h2 { font-size: 2em; }
+.remark-slide-content h1 { font-size: 2.5em; }
+.remark-slide-content h2 { font-size: 1.825em; }
 .remark-slide-content h3 { font-size: 1.6em; }
 
 .footnote {
